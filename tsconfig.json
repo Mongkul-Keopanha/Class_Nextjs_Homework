@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/app/(data-fetch)/categories/page.tx"  ],
   "exclude": ["node_modules"]
 }
