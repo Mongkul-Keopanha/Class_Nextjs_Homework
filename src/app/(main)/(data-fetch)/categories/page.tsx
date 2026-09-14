@@ -17,7 +17,7 @@ import CategoryListComponent from "@/src/components/category/CategoryListCompone
 // }
 
 export default async function CategoryPage() {    
-    const category = fetch(`${process.env.NEXT_PUBLIC_FAKESTORE_PLAZI_API}/categories`)
+    const category = fetch(`${process.env.NEXT_PUBLIC_FAKESTORE_API}/categories`)
         .then((data)=> data.json())
         .then((category)=> {
             console.log(category);
@@ -26,7 +26,7 @@ export default async function CategoryPage() {
         
     return (
         <div>
-            <Suspense fallback={ <p className="p-6">Loading categories...</p> }>
+            <Suspense fallback={ <p className="p-6" style={{fontWeight:'bold', fontSize:'2em'}}>Loading categories...</p> }>
                 <CategoryListComponent category={category} />
             </Suspense>
         </div>
