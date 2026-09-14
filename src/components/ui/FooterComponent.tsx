@@ -65,7 +65,7 @@ export default function FooterComponent(){
               title="Our email"
               className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              info@lorem.mail
+              mongkulkeopanha@gmail.com
             </a>
           </div>
           <div className="flex">

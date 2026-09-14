@@ -2,8 +2,7 @@
 function AboutPage() {
   return (
     <div>
-      <p>សួស្តី!</p>
-      <p>Hello, this is Landing/Home Page!</p>
+      <h1 style={{fontWeight:'bold', fontSize:'3em'}}>Hello, this is Landing Page!</h1>
 
     </div>
   );

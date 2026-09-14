@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function NavbarComponent(){
 
@@ -8,20 +9,20 @@ export default function NavbarComponent(){
           <button>
             <div className="flex items-center space-x-2">
               <h2 className="text-black dark:text-white font-bold text-2xl">
-                Company
+                Panha&apos;s Company 
               </h2>
             </div>
           </button>
           <div className="hidden lg:block">
             <ul className="flex space-x-10 text-base font-bold text-black/60 dark:text-white">
               <li className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
-                <a href="#">Home</a>
+                <Link href="#">Home</Link>
               </li>
               <li className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
                 <a href="#">Our services</a>
               </li>
               <li className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
-                <a href="#">About</a>
+                <Link href="/about">About</Link>
               </li>
               <li className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
                 <a href="#">Contact</a>
@@ -30,10 +31,10 @@ export default function NavbarComponent(){
           </div>
           <div className="hidden lg:flex lg:items-center gap-x-2">
             <button className="flex items-center text-black dark:text-white justify-center px-6 py-2.5 font-semibold">
-              Sign up
+              <Link href="/register">Sign up</Link>
             </button>
             <button className="flex items-center justify-center rounded-md bg-[#4A3BFF] text-white px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200">
-              Login
+              <Link href="/login">Login</Link>
             </button>
           </div>
           <div className="flex items-center justify-center lg:hidden">
