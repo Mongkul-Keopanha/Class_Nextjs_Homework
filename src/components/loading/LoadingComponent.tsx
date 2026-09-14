@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader } from "@/src/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export function SkeletonCard() {
