@@ -1,5 +1,5 @@
-// import Navbar from "@/src/components/ui/Navbar"; 
-// import Footer from "@/src/components/ui/Footer";
+import NavbarComponent from "@/src/components/ui/NavbarComponent";
+import FooterComponent from "@/src/components/ui/FooterComponent";
 
 export default function MainLayout({
   children,
@@ -7,11 +7,14 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    // ប្តូរពី <html> និង <body> មកត្រឹម <div> បែបនេះ
     <div className="flex flex-col min-h-screen">
-      {/* <Navbar /> */}
+
+      <NavbarComponent />
+      
       <main className="grow">{children}</main>
-      {/* <Footer /> */}
+
+      <FooterComponent />
+      
     </div>
   );
 }
