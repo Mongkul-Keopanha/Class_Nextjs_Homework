@@ -16,7 +16,7 @@ export default function Error({
  
   return (
     <div>
-      <h2 style={{color:'red', fontWeight:'bold', fontSize:'1.5em'}}>Something went wrong!</h2>
+      <h2 style={{color:'red', fontWeight:'bold', fontSize:'2em'}}>Something went wrong!</h2>
       <button
         onClick={
           // Attempt to recover by re-fetching and re-rendering the segment
