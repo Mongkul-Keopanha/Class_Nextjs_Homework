@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import "./globals.css"; // នេះជាចំណុចសំខាន់បំផុតដែលធ្វើឱ្យ CSS ដំណើរការ!
 
-export const metaData : Metadata = {
+export const metadata : Metadata = {
   title: {
     template: '%s | Online Store',
     default: 'Online Store'
