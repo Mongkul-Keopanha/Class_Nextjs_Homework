@@ -1,5 +1,19 @@
-
+import { Metadata } from "next";
 import "./globals.css"; // នេះជាចំណុចសំខាន់បំផុតដែលធ្វើឱ្យ CSS ដំណើរការ!
+
+export const metaData : Metadata = {
+  title: {
+    template: '%s | M2',
+    default: 'M2'
+  },
+  keywords: "Skirt for women, Trouser for men, Kid clothes, E-commerce, Products, Selling products",
+  description: "M2 is the best platform for selling products in E-commerce modern website for Cambodian people.",
+  openGraph: {
+    title: 'M2',
+    description: "M2 is the best platform for selling products in E-commerce modern website for Cambodian people.",
+    images: ['/welcome_card.png'],
+  }
+}
 
 export default function RootLayout({
   children,
