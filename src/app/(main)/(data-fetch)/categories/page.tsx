@@ -1,34 +1,20 @@
 import { Suspense } from "react";
 import CategoryListComponent from "@/src/components/category/CategoryListComponent";
 
-// async function getCategories(){
-//     try {
-//         const res = await fetch('https://api.escuelajs.co/api/v1/categories', {
-//             cache: "no-store"  // fetch យកទិន្នន័យថ្មី
-//         });
+export default async function CategoryPage() {
 
-//         if(!res.ok) throw new Error("Failed to fetch categories");
-
-//         return await res.json();
-//     } catch(err) {
-//         console.error("Fetch Error:", err);
-//         return[];  // បើ fetch បរាជ័យ បោះ Array ទទេការពារកុំឱ្យបែកផ្ទាំងក្រហម
-//     }
-// }
-
-export default async function CategoryPage() {    
-    const category = fetch(`${process.env.NEXT_PUBLIC_FAKESTORE_API}/categories`)
+    const categoryPromise = fetch(`${process.env.NEXT_PUBLIC_FAKESTORE_API}/products`, {cache:"no-store"})
         .then((data)=> data.json())
         .then((category)=> {
             console.log(category);
             return category;
         })
-        
+
     return (
         <div>
-            <Suspense fallback={ <p className="p-6" style={{fontWeight:'bold', fontSize:'2em'}}>Loading categories...</p> }>
-                <CategoryListComponent category={category} />
-            </Suspense>
+        <Suspense fallback={<p className="p-6 font-bold text-2xl">Loading products...</p>}>
+            <CategoryListComponent category={categoryPromise} />
+        </Suspense>
         </div>
-    );
+  );
 }

@@ -28,7 +28,7 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "cook-lewis.com"
-      }
+      },
     ]
   }
 };
