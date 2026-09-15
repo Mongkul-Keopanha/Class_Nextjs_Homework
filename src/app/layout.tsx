@@ -3,15 +3,15 @@ import "./globals.css"; // នេះជាចំណុចសំខាន់ប�
 
 export const metadata : Metadata = {
   title: {
-    template: '%s | Online Store',
-    default: 'Online Store'
+    template: "%s | Online Store",
+    default: "Online Store"
   },
   keywords: "Skirt for women, Trouser for men, Kid clothes, E-commerce, Products, Selling products",
   description: "This site is the best platform for selling products in E-commerce modern website for Cambodian people.",
   openGraph: {
-    title: 'Online Store',
+    title: "Online Store",
     description: "This site is the best platform for selling products in E-commerce modern website for Cambodian people.",
-    images: ['/online_store.png'],
+    images: ["/online_store.png"],
   }
 }
 
